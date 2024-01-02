@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>享学课堂-飞机大战-飘哥</title>
+    <style>
+        /* 样式重置 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            border: 1px solid red;
+            margin: auto;
+        }
+
+        #stage {
+            width: 480px;
+            height: 650px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stage">
+        <canvas id="canvas" width="480" height="650"></canvas>
+    </div>
+    <!-- 一般情况下，预先加载配置项文件，提前加载资源内容，提升性能 -->
+    <script src="./js/config.js"></script>
+
+    <script src="./js/sky.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/bullet.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/hero.js"></script>
+
+    <!-- 为了确保主程序执行完全没有问题，所以我们需要最后加载主程序文件 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
